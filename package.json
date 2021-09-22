@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@egjs/react-flicking": "^3.7.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@material-ui/core": "^5.0.0-alpha.29",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "install": "^0.13.0",
+    "react-bootstrap": "^1.5.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-spring": "^9.1.0",
+    "react-youtube": "^7.13.1",
+    "react-youtube-background": "^1.0.0",
+    "styled-components": "^5.2.3"
+  }
+}
