@@ -1,0 +1,42 @@
+.player {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 2px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid grey;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    color: white;
+    size: 15px;
+}
+
+.box_1 {
+    display: flex;
+}
+
+.text {
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+  .body {
+      height: auto;
+      width: auto;
+      background-color: #121212;
+  }

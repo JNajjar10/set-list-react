@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './mystyle.module.css';
+import React, { Component } from 'react';
+import Home from './Pages/Home';
+import Watch from './Pages/Watch';
+import Login from './Pages/Login';
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+            <Route path="/watch" exact component={Watch}/>
+            <Route path="/watch/:id" exact component={Watch}/>
+            <Route path="/login"  component={Login}/>
+            <Route path="/" component={Home}/>
+        </Switch>
+      </Router>
+      );
+    }
+
 }
+
+
 
 export default App;

@@ -1,0 +1,36 @@
+.banner {
+    background-size: cover;
+    background-image: url('https://static.politico.com/dims4/default/5104086/2147483647/resize/1160x%3E/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F5e%2F36%2F20d9fdcd4d8ab0e0b2add5e77371%2Fap20178460172749-1.jpg');
+    background-position: 'center center';
+}
+
+.video {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+.overlay {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+.description {
+    color: white;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 4vw;
+    position: relative;
+    top: 70px;
+}

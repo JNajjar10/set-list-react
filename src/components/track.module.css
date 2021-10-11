@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    width: 80%;
+    flex-wrap: nowrap;
+    padding-bottom: 2px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+.box_1 {
+    justify-self: start;
+}
+.box_2 {
+    justify-self: end;
+}
+
+.box_1_container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.box_1_container_box_1 {
+    padding-right: 10px;
+}
+
+.box_1_container_box_2 {
+    padding-right: 10px;
+}
+
+.container:hover {
+    background-color:rgb(60, 60, 60);
+}
+
+.album {
+    height: 50px;
+    width: 50px;
+}
+
+.playButton {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    transition: transform ease-in-out 150ms;
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+
+.playButton::before,
+.playButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.container .playButton:hover {
+    transform: scale(1.05);
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.playButton:hover::before {
+    background: #22DA60;
+}
+
+.playButton::before {
+    content: "\f04b";
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-weight: 900;
+    background: #1DB954;
+    display: grid;
+    place-items: center;
+    font-size: .5em;
+    z-index: 10;
+    transition: background-color 100ms linear;
+}
+
+.playButton:hover::after {
+    background: #1DB954;
+    z-index: 1;
+    animation: pulse 1250ms infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.95);
+        opacity: .75;
+    }
+    100% {
+        transform: scale(1.35);
+        opacity: 0;
+    }
+}
+
+.albumArt {
+    justify-content: left;
+
+}
+
+.playButton:hover {
+    background-color: #EBECF0;
+}
+
+.trackName {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.text {
+    font-size: 15px;
+    color: #f7f7f7;
+}
+
